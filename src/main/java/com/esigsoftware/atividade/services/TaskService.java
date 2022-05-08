@@ -28,4 +28,9 @@ public class TaskService {
 	public Task insert(Task obj) {
 		return repository.save(obj);
 	}
+	
+	// Deletando pedido no banco de dados
+	public void delete(Long id) {
+		repository.deleteById(id);
+	}
 }
