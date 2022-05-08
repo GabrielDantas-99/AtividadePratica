@@ -1,14 +1,17 @@
 package com.esigsoftware.atividade.entities;
 
 import java.io.Serializable;
+import java.time.Instant;
 import java.util.Objects;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "tb_tarefas")
 public class Task implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
@@ -19,19 +22,19 @@ public class Task implements Serializable{
 	private String descricao;
 	private String responsavel;
 	private String prioridade;
-	private String data;
+	private Instant data;  
 	
 	public Task() {
 	}
 
-	public Task(Long id, String titulo, String descricao, String responsavel, String prioridade, String data) {
+	public Task(Long id, String titulo, String descricao, String responsavel, String prioridade, Instant data) {  // Trocar Instant e Responsible p String 
 		super();
-		this.id = id;
-		this.titulo = titulo;
-		this.descricao = descricao;
+		this.id          = id;
+		this.titulo      = titulo;
+		this.descricao   = descricao;
 		this.responsavel = responsavel;
-		this.prioridade = prioridade;
-		this.data = data;
+		this.prioridade  = prioridade;
+		this.data        = data;
 	}
 
 	public Long getId() {
@@ -58,11 +61,11 @@ public class Task implements Serializable{
 		this.descricao = descricao;
 	}
 
-	public String getResponsavel() {
+	public String getResponsavel() {                
 		return responsavel;
 	}
 
-	public void setResponsavel(String responsavel) {
+	public void setResponsavel(String responsavel) { 
 		this.responsavel = responsavel;
 	}
 
@@ -74,11 +77,11 @@ public class Task implements Serializable{
 		this.prioridade = prioridade;
 	}
 
-	public String getData() {
+	public Instant getData() {         
 		return data;
 	}
 
-	public void setData(String data) {
+	public void setData(Instant data) { 
 		this.data = data;
 	}
 

@@ -1,5 +1,6 @@
 package com.esigsoftware.atividade.config;
 
+import java.time.Instant;
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,8 +21,8 @@ public class TestConfig implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 		
-		Task t1 = new Task(null, "Criar TestConfig", "Criar testconfig para...", "Gabriel", "Alta", "04/05/2022");
-		Task t2 = new Task(null, "Criar TaskRepository", "Criar TaskRepository para...", "Felipe", "Média", "04/05/2022");
+		Task t1 = new Task(null, "Criar TestConfig", "Criar testconfig para...", "Gabriel", "Alta", Instant.parse("2022-04-29T20:52:04Z"));
+		Task t2 = new Task(null, "Criar TaskRepository", "Criar TaskRepository para...","Felipe", "Média", Instant.parse("2022-04-29T20:52:04Z"));
 		
 		taskRepository.saveAll(Arrays.asList(t1, t2));
 		

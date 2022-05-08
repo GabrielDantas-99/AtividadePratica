@@ -23,4 +23,9 @@ public class TaskService {
 		Optional<Task> obj = repository.findById(id);
 		return obj.get();
 	}
+	
+	// Salvando pedido no banco de dados
+	public Task insert(Task obj) {
+		return repository.save(obj);
+	}
 }
