@@ -24,7 +24,7 @@ public class TaskService {
 	
 	public Task findById(Long id) {
 		Optional<Task> obj = repository.findById(id);
-		return obj.get();
+		return obj.orElseThrow(() -> new ResourceNotFoundException(id));
 	}
 	
 	// Salvando pedido no banco de dados
