@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -37,7 +38,7 @@ public class TaskResource {
 		Task obj = service.findById(id);
 		return ResponseEntity.ok().body(obj);
 	}
-	
+	// Inserindo tarefas no banco
 	@PostMapping
 	public ResponseEntity<Task> insert(@RequestBody Task obj){
 		obj = service.insert(obj);
@@ -45,10 +46,16 @@ public class TaskResource {
 				.buildAndExpand(obj.getId()).toUri();
 		return ResponseEntity.created(uri).body(obj);
 	}
-	
+	// Deletando tarefas no banco
 	@DeleteMapping(value = "/{id}")
 	public ResponseEntity<Void> delete(@PathVariable Long id){
 		service.delete(id);
 		return ResponseEntity.noContent().build();
+	}
+	
+	@PutMapping(value = "/{id}")
+	public ResponseEntity<Task> update(@PathVariable Long id, @RequestBody Task obj) {
+		obj = service.update(id,  obj);
+		return ResponseEntity.ok().body(obj);
 	}
 }
