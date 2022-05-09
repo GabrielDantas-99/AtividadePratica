@@ -1,4 +1,6 @@
 # Gerenciador de Tarefas
+
+<span id="badges"></span>
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?&label=STATUS&message=EM%20DESENVOLVIMENTO&color=yellow&?style=flat-square)
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=BACKEND&message=JAVA%2011&color=important&style=flat-square)
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=FRAMEWORK&message=SPRING%20BOOT%204&color=success&style=flat-square)
@@ -7,7 +9,14 @@
 </br>
 Esse projeto tem como funcionalidade principal o cadastro, leitura, atualização e remoção de tarefas delegadas à, nesse caso, desenvolvedores. O sistema foi desenvolvido em linguagem Java 11 e o framework Spring Boot para back-end e Angular para front-end.
 
-## Modelo de Domínio:
+## Índice
+* [Gerenciador de Tarefas](#gerenciador-de-tarefas)
+* [Badges](#badges)
+* [Índice](#índice)
+* [Modelo de Domínio](#modelo-de-dominio)
+* [Getting Started](#getting-started)
+
+## Modelo de Domínio: <span id="modelo-de-dominio"></span>
 <div align="center">
   <img width = "400rem" height="300em" src="https://github.com/GabrielDantas-99/AtividadePratica/blob/main/imgs/ModeloDeDominio.png?raw=true"/>
 </div>
