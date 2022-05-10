@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import com.esigsoftware.atividade.services.exceptions.DatabaseException;
 import com.esigsoftware.atividade.services.exceptions.ResourceNotFoundException;
 
-@ControllerAdvice
+@ControllerAdvice // Intercepta as exceções para podermos trata-las
 public class ResourceExceptionHandler {
 
 	@ExceptionHandler(ResourceNotFoundException.class)
