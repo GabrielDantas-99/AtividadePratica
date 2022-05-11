@@ -33,6 +33,7 @@ g)	Documentar a API usando o Swagger (https://swagger.io).  ✅
   - Springfox Swagger
 
 h)	Publicar projeto no heroku ou outro ambiente cloud.  ✅
+  - https://atividade-crud-esig.herokuapp.com
  
 
 ## Modelo de Domínio: <span id="modelo-de-dominio"></span>
