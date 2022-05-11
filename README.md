@@ -23,7 +23,7 @@ c)	Os endpoints devem ser em REST. ✅
 Itens opcionais, mas que se feitos mostram um diferencial:
 
 d)	A aplicação deverá ter um controle de login por usuário e senha e os endpoints devem autenticar através de token JWT.
-  - Configurada no arquivo  para futura implementação
+  - Configurada no arquivo src/main/resources/application-dev.properties para futura implementação
 
 e)	Utilizar persistência em um banco de dados PostgreSQL e persistência JPA. ✅
 
