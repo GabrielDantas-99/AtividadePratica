@@ -23,12 +23,14 @@ c)	Os endpoints devem ser em REST. ✅
 Itens opcionais, mas que se feitos mostram um diferencial:
 
 d)	A aplicação deverá ter um controle de login por usuário e senha e os endpoints devem autenticar através de token JWT.
+  - Configurada no arquivo  para futura implementação
 
 e)	Utilizar persistência em um banco de dados PostgreSQL e persistência JPA. ✅
 
 f)	Utilizar testes de unidades.  ✅
 
 g)	Documentar a API usando o Swagger (https://swagger.io).  ✅
+  - Springfox Swagger
 
 h)	Publicar projeto no heroku ou outro ambiente cloud.  ✅
  
