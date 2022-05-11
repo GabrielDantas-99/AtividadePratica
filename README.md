@@ -7,14 +7,31 @@
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=FRONTEND&message=ANGULAR%2011&color=red&style=flat-square)
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=DATABASE&message=POSTGRESQL&color=informational&style=flat-square)
 </br>
-Esse projeto tem como funcionalidade principal o cadastro, leitura, atualização e remoção de tarefas delegadas à, nesse caso, desenvolvedores. O sistema foi desenvolvido em linguagem Java 11 e o framework Spring Boot para back-end e Angular para front-end.
+</br>
+Esse projeto tem como funcionalidade principal o cadastro, leitura, atualização e remoção de tarefas delegadas à, nesse caso, desenvolvedores. O sistema foi desenvolvido em linguagem Java 11 e o framework Spring Boot para back-end e Angular para front-end. O deploy da aplicação foi feita no Heroku com Banco de Dados PostgreSQL local.
 
-## Índice
-* [Gerenciador de Tarefas](#gerenciador-de-tarefas)
-* [Badges](#badges)
-* [Índice](#índice)
-* [Modelo de Domínio](#modelo-de-dominio)
-* [Getting Started](#getting-started)
+## Itens Requisitados:
+a)	Criar uma aplicação Front-end utilizando Angular na versão mais recente. ✅
+  - Front-end (Funcionalidades) : https://github.com/GabrielDantas-99/crud-interface
+  - Front-end (API) : https://drive.google.com/drive/folders/1OuaNfbjMOxw3oes7YnTrYiCy0hBZ5K9R?usp=sharing
+
+b)	Desenvolver o backend utilizando Java 11 e Spring Boot. ✅
+  - https://github.com/GabrielDantas-99/AtividadePratica
+
+c)	Os endpoints devem ser em REST. ✅
+
+Itens opcionais, mas que se feitos mostram um diferencial:
+
+d)	A aplicação deverá ter um controle de login por usuário e senha e os endpoints devem autenticar através de token JWT.
+
+e)	Utilizar persistência em um banco de dados PostgreSQL e persistência JPA. ✅
+
+f)	Utilizar testes de unidades.  ✅
+
+g)	Documentar a API usando o Swagger (https://swagger.io).  ✅
+
+h)	Publicar projeto no heroku ou outro ambiente cloud.  ✅
+ 
 
 ## Modelo de Domínio: <span id="modelo-de-dominio"></span>
 <div align="center">
