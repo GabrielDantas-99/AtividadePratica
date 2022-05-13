@@ -24,7 +24,7 @@ public class TaskResource {
 
 	@Autowired
 	private TaskService service;
-	
+
 	// Buscando todas as tarefas
 	@GetMapping
 	public ResponseEntity<List<Task>> findAll() {

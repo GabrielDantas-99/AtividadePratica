@@ -1,7 +1,6 @@
 package com.esigsoftware.atividade.entities;
 
 import java.io.Serializable;
-import java.time.Instant;
 import java.util.Objects;
 
 import javax.persistence.Entity;
@@ -22,12 +21,12 @@ public class Task implements Serializable{
 	private String descricao;
 	private String responsavel;
 	private String prioridade;
-	private Instant data;  
+	private String data;  
 	
 	public Task() {
 	}
 
-	public Task(Long id, String titulo, String descricao, String responsavel, String prioridade, Instant data) {  // Trocar Instant e Responsible p String 
+	public Task(Long id, String titulo, String descricao, String responsavel, String prioridade, String data) {  // Trocar Instant e Responsible p String 
 		super();
 		this.id          = id;
 		this.titulo      = titulo;
@@ -77,11 +76,11 @@ public class Task implements Serializable{
 		this.prioridade = prioridade;
 	}
 
-	public Instant getData() {         
+	public String getData() {         
 		return data;
 	}
 
-	public void setData(Instant data) { 
+	public void setData(String data) { 
 		this.data = data;
 	}
 
