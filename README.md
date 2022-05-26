@@ -38,12 +38,7 @@ g)	Documentar a API usando o Swagger (https://swagger.io).  ✅
 
 h)	Publicar projeto no heroku ou outro ambiente cloud.  ✅
   - https://atividade-crud-esig.herokuapp.com
- 
 
-## Modelo de Domínio: <span id="modelo-de-dominio"></span>
-<div align="center">
-  <img width = "400rem" height="300em" src="https://github.com/GabrielDantas-99/AtividadePratica/blob/main/imgs/ModeloDeDominio.png?raw=true"/>
-</div>
 
 ## Desenvolvimento:
 Para o desenvolvimento do projeto, foi necessário instalar os seguintes programas:
