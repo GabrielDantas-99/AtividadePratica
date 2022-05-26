@@ -11,7 +11,7 @@
 Esse projeto tem como funcionalidade principal o cadastro, leitura, atualização e remoção de tarefas delegadas à, nesse caso, desenvolvedores. O sistema foi desenvolvido em linguagem Java 11 e o framework Spring Boot para back-end e Angular para front-end. O deploy da aplicação foi feita no Heroku com Banco de Dados PostgreSQL local.
 
 ## Projeto Completo:
-Front-End: https://github.com/GabrielDantas-99/taskmanager-fe
+Front-End: https://github.com/GabrielDantas-99/taskmanager-fe </br>
 Back-End: https://github.com/GabrielDantas-99/taskmanager-api
 
 ## Itens Requisitados:
